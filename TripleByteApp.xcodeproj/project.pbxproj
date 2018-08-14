@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96F9868126ED8134A8DFBCA1 /* Pods_TripleByteApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3922F6482ADFE01644F3F1D /* Pods_TripleByteApp.framework */; };
 		DB2464022122A512003E031B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2464012122A512003E031B /* AppDelegate.swift */; };
-		DB2464042122A512003E031B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2464032122A512003E031B /* ViewController.swift */; };
+		DB2464042122A512003E031B /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2464032122A512003E031B /* MainVC.swift */; };
 		DB2464072122A512003E031B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2464052122A512003E031B /* Main.storyboard */; };
 		DB2464092122A516003E031B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2464082122A516003E031B /* Assets.xcassets */; };
 		DB24640C2122A516003E031B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB24640A2122A516003E031B /* LaunchScreen.storyboard */; };
+		DB2464172122A6B3003E031B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2464162122A6B3003E031B /* Constants.swift */; };
+		DB2464192122A842003E031B /* DataPetModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2464182122A842003E031B /* DataPetModel.swift */; };
+		DB24641B2122AA5C003E031B /* PetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB24641A2122AA5C003E031B /* PetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1BAA7571E2F966382A1A67BC /* Pods-TripleByteApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleByteApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TripleByteApp/Pods-TripleByteApp.release.xcconfig"; sourceTree = "<group>"; };
+		7445EA9089CCEA1D318FAEB6 /* Pods-TripleByteApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TripleByteApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TripleByteApp/Pods-TripleByteApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A3922F6482ADFE01644F3F1D /* Pods_TripleByteApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TripleByteApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2463FE2122A512003E031B /* TripleByteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TripleByteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2464012122A512003E031B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB2464032122A512003E031B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB2464032122A512003E031B /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		DB2464062122A512003E031B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB2464082122A516003E031B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB24640B2122A516003E031B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB24640D2122A516003E031B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB2464162122A6B3003E031B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		DB2464182122A842003E031B /* DataPetModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPetModel.swift; sourceTree = "<group>"; };
+		DB24641A2122AA5C003E031B /* PetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F9868126ED8134A8DFBCA1 /* Pods_TripleByteApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88FAD41D30DBBD46D8E96895 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3922F6482ADFE01644F3F1D /* Pods_TripleByteApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B679492FBEA4FF2940F39A9A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7445EA9089CCEA1D318FAEB6 /* Pods-TripleByteApp.debug.xcconfig */,
+				1BAA7571E2F966382A1A67BC /* Pods-TripleByteApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DB2463F52122A512003E031B = {
 			isa = PBXGroup;
 			children = (
 				DB2464002122A512003E031B /* TripleByteApp */,
 				DB2463FF2122A512003E031B /* Products */,
+				B679492FBEA4FF2940F39A9A /* Pods */,
+				88FAD41D30DBBD46D8E96895 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +84,41 @@
 		DB2464002122A512003E031B /* TripleByteApp */ = {
 			isa = PBXGroup;
 			children = (
+				DB2464152122A68D003E031B /* View */,
+				DB2464142122A688003E031B /* Controller */,
+				DB2464132122A681003E031B /* Model */,
 				DB2464012122A512003E031B /* AppDelegate.swift */,
-				DB2464032122A512003E031B /* ViewController.swift */,
 				DB2464052122A512003E031B /* Main.storyboard */,
 				DB2464082122A516003E031B /* Assets.xcassets */,
 				DB24640A2122A516003E031B /* LaunchScreen.storyboard */,
 				DB24640D2122A516003E031B /* Info.plist */,
 			);
 			path = TripleByteApp;
+			sourceTree = "<group>";
+		};
+		DB2464132122A681003E031B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB2464162122A6B3003E031B /* Constants.swift */,
+				DB2464182122A842003E031B /* DataPetModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB2464142122A688003E031B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB2464032122A512003E031B /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DB2464152122A68D003E031B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB24641A2122AA5C003E031B /* PetCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB2464102122A516003E031B /* Build configuration list for PBXNativeTarget "TripleByteApp" */;
 			buildPhases = (
+				74EF20B45EE13BCA28CF5735 /* [CP] Check Pods Manifest.lock */,
 				DB2463FA2122A512003E031B /* Sources */,
 				DB2463FB2122A512003E031B /* Frameworks */,
 				DB2463FC2122A512003E031B /* Resources */,
+				6D104D5B428DC7AF5CD16945 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +189,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6D104D5B428DC7AF5CD16945 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TripleByteApp/Pods-TripleByteApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TripleByteApp/Pods-TripleByteApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		74EF20B45EE13BCA28CF5735 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TripleByteApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DB2463FA2122A512003E031B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB2464042122A512003E031B /* ViewController.swift in Sources */,
+				DB2464042122A512003E031B /* MainVC.swift in Sources */,
+				DB24641B2122AA5C003E031B /* PetCell.swift in Sources */,
+				DB2464192122A842003E031B /* DataPetModel.swift in Sources */,
 				DB2464022122A512003E031B /* AppDelegate.swift in Sources */,
+				DB2464172122A6B3003E031B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +379,7 @@
 		};
 		DB2464112122A516003E031B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7445EA9089CCEA1D318FAEB6 /* Pods-TripleByteApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +398,7 @@
 		};
 		DB2464122122A516003E031B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BAA7571E2F966382A1A67BC /* Pods-TripleByteApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
